@@ -96,4 +96,66 @@ function sum(a,b){
 }
 const value = sum(4,5)
 console.log(value);
+// // Call Back function 
+
+
+// function sum(num1, num2,fnTocall) {
+//         let result = num1 + num2;
+//         fnTocall(result);
+//     }
+    
+//     function displayResult(data) {
+//         console.log("Result of the sum is : " + data);
+//     }
+    
+//     function displayResultPassive(data) {
+//         console.log("Sum's result is : " + data);
+//     }
+    
+//     // You are only allowed to call one function after this
+//     // How will you displayResult of a sum
+//     const ans = sum(1,2,displayResult);
+
+
+// //      Implementation of callback function
+
+
+
+// function cal(a,b,type){
+//         if (type =="sum"){
+//                 const val = sum(a,b)
+//                 return val;
+//         }
+//         if(type=="sub"){
+//                 const val = sub(a,b)
+//                 return val;
+//         }
+
+// }
+// function sum(a,b){
+//         return a+b;
+// }
+// function sub(a,b){
+//         return a-b;
+// }
+// const value = cal(5,2,"sub")
+// console.log(value);
+
+// Understanding from a newer perspective
+
+function calculate(a,b,arithmetic){
+        const ans = arithmetic(a,b);
+        return ans;
+}
+function sum(a,b){
+        return a+b;
+}
+const val = calculate(1,2,sum);
+console.log(val);
+
+// Using set timeout function
+function greet(){
+        console.log("It is me the batman")
+}
+setTimeout(greet,3*1000)
 
