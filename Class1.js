@@ -151,8 +151,8 @@ function calculate(a,b,arithmetic){
 function sum(a,b){
         return a+b;
 }
-const val = calculate(1,2,sum);
-console.log(val);
+const value = sum(4,5)
+console.log(value);
 
 // Using set timeout function
 function greet(){
